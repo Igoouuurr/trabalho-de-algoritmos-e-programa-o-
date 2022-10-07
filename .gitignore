@@ -1,52 +1,21 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int num1, num2, soma, subtracao, multi, div, num, raiz;
+    printf("Calculadora 1.0\n");
+    printf("Entre os 2 numeros a serem processados: ");
+    scanf("%i%i", &num1, &num2);
+    soma            = num1 + num2;
+    subtracao       = num1 - num2;
+    multi           = num1 * num2;
+    div             = num1 / num2;
+    raiz            = sqrt(num);
+    printf( "A soma e: %i\n", soma );
+    printf( "A subtracao e: %i\n", subtracao );
+    printf( "O multiplicação e: %i \n", multi );
+    printf( "A divisão e: %i \n", div );
+    printf( "A raiz quadrada de %f é: %f.\n", num, raiz);
+    return 0;
+}
